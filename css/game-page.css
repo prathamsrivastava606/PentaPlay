@@ -1,0 +1,48 @@
+/* PentaPlay: shared styles for the five game pages. Each game's own style.css only sets its accent colour and canvas ratio. */
+@font-face{font-family:"Poppins";font-weight:400;font-display:swap;src:url("../assets/fonts/poppins-400.woff") format("woff")}
+@font-face{font-family:"Poppins";font-weight:500;font-display:swap;src:url("../assets/fonts/poppins-500.woff") format("woff")}
+@font-face{font-family:"Poppins";font-weight:700;font-display:swap;src:url("../assets/fonts/poppins-700.woff") format("woff")}
+:root{--bg:#0e1222;--panel:#1a2038;--line:rgba(255,255,255,.1);--text:#f1eee8;--muted:#a9aec6;--dim:#7d839f;--cyan:#35d4e6;--amber:#ffb340;
+  --display:"Lilita One","Poppins","Segoe UI",Arial,sans-serif;--body:"Poppins","Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  background-image:radial-gradient(900px 520px at 10% -8%,rgba(92,78,200,.26),transparent 62%),radial-gradient(rgba(255,255,255,.045) 1px,transparent 1.3px);background-size:auto,22px 22px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:6px}
+.gwrap{width:100%;max-width:1240px;margin:0 auto;padding:0 24px}
+
+.gbar{background:rgba(14,18,34,.9);border-bottom:1px solid var(--line)}
+.gbar-in{display:flex;align-items:center;justify-content:space-between;height:56px}
+.back{text-decoration:none;color:var(--cyan);font-weight:500;font-size:15px;padding:8px 12px 8px 0;transition:color .2s}
+.back:hover{color:var(--text)}
+.logo{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--display);font-size:22px;line-height:1;letter-spacing:.2px}
+.logo b{font-weight:400;color:var(--cyan)}.logo svg{width:24px;height:24px}
+
+.ghead{display:flex;align-items:flex-end;justify-content:space-between;gap:12px 32px;flex-wrap:wrap;padding:20px 0 16px}
+.genre{margin:0;font-size:13px;font-weight:500;color:var(--accent)}
+.ghead h1{margin:0;font-family:var(--display);font-weight:400;font-size:clamp(30px,4.4vw,42px);line-height:1.1}
+.gdesc{margin:0;color:var(--muted);font-size:15.5px;max-width:46ch}
+
+.wrap{position:relative;width:min(100%,calc((100vh - var(--chrome,310px)) * var(--ar)));min-width:min(100%,300px);margin:0 auto;background:#000;border-radius:10px;
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 45%,transparent),0 18px 40px -20px color-mix(in srgb,var(--accent) 50%,transparent)}
+.wrap canvas{display:block;width:100%;height:auto;border-radius:10px}
+#loading{position:absolute;inset:0;display:grid;place-items:center;margin:0;color:var(--muted)}
+.wrap:fullscreen{width:100vw;height:100vh;max-width:none;display:grid;place-items:center;border-radius:0;box-shadow:none}
+.wrap:fullscreen canvas{width:min(100vw,calc(100vh * var(--ar)));border-radius:0}
+
+.gfoot{display:flex;align-items:center;justify-content:space-between;gap:14px 24px;flex-wrap:wrap;margin-top:16px}
+.stats{display:flex;gap:10px;flex-wrap:wrap}
+.stats span{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px 14px;color:var(--muted);font-size:14px}
+.stats b{color:var(--text);margin-left:4px;font-weight:700}
+.gbtns{display:flex;gap:10px;flex-wrap:wrap}
+.gbtns button,.gbtns a{font:700 14.5px var(--body);text-decoration:none;cursor:pointer;padding:10px 18px;border-radius:10px;border:1.5px solid rgba(255,255,255,.22);background:transparent;color:var(--text);transition:transform .15s,border-color .2s,color .2s,filter .2s}
+.gbtns button:hover,.gbtns a:hover{border-color:var(--accent);color:var(--accent)}
+.gbtns #restart{background:var(--accent);border-color:var(--accent);color:#10142a}
+.gbtns #restart:hover{color:#10142a;filter:brightness(1.1);transform:translateY(-1px)}
+.controls{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:18px 0 6px;color:var(--dim);font-size:14px}
+.controls .lbl{color:var(--muted);font-weight:500}
+.controls .k{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.controls kbd{font:600 12px/1 var(--body);min-width:26px;text-align:center;padding:6px 8px 5px;border-radius:6px;background:#0f1426;color:var(--text);border:1px solid var(--line);border-bottom-width:3px}
+.note{display:none;margin:4px 0 24px;color:var(--dim);font-size:13.5px}
+@media (max-width:720px){.gwrap{padding:0 14px}.note{display:block}.gbar-in .logo span{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}

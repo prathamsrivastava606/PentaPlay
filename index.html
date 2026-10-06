@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PentaPlay – Five browser games, one place to play</title>
+<meta name="description" content="PentaPlay is a small collection of five browser games: Space Invasion, Fruity Match, Zeroth Second, Pac-Man and Turbo Rush. No install, just pick one and play.">
+<meta name="theme-color" content="#0e1222">
+<meta property="og:title" content="PentaPlay">
+<meta property="og:description" content="Five browser games, one place to play.">
+<meta property="og:image" content="assets/shared/space-invasion-thumb.jpg">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#home" aria-label="PentaPlay home">
+      <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><polygon points="32,6 57,24.2 47.5,53.6 16.5,53.6 7,24.2" fill="#35d4e6"/><polygon points="26,22 26,41 42,31.5" fill="#ffb340"/></svg>
+      <span>Penta<b>Play</b></span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu">
+      <a href="#home" data-link="home">Home</a>
+      <a href="#games" data-link="games">Games</a>
+      <a href="#about" data-link="about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">5 games · play right in your browser</p>
+      <h1 class="wordmark">Penta<span>Play</span></h1>
+      <p class="tagline">Five games. One place to play.</p>
+      <p class="lead">Space battles, a fruit puzzle, a time-bending shooter, a classic maze chase and an endless road race. Pick one and jump in.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#games">Explore games <span aria-hidden="true">↓</span></a>
+        <a class="btn btn-ghost" href="#about">About PentaPlay</a>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i><i class="spark s4"></i>
+      <a class="tile t-space" href="games/space-invasion/index.html" tabindex="-1"><img class="art" src="assets/shared/tile-space.jpg" alt="" width="480" height="480"></a>
+      <a class="tile t-fruit" href="games/fruity-match/index.html" tabindex="-1"><img class="art" src="assets/shared/tile-fruity.jpg" alt="" width="480" height="480"></a>
+      <a class="tile t-zero" href="games/zeroth-second/index.html" tabindex="-1"><img class="art" src="assets/shared/tile-zeroth.jpg" alt="" width="480" height="480"></a>
+      <a class="tile t-pac" href="games/pac-man/index.html" tabindex="-1"><img class="art" src="assets/shared/tile-pac.jpg" alt="" width="480" height="480"></a>
+      <a class="tile t-turbo" href="games/turbo-rush/index.html" tabindex="-1"><img class="art" src="assets/shared/tile-turbo.jpg" alt="" width="480" height="480"></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="games">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>The collection</h2>
+      <p>Five different games. Pick your favorite and start playing.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card c-space" style="--accent:var(--c-space)">
+        <a class="media" href="games/space-invasion/index.html" tabindex="-1" aria-hidden="true">
+          <img src="assets/shared/space-invasion-thumb.jpg" width="960" height="640" loading="lazy" alt="Space Invasion gameplay: a ship firing at alien formations, with a big explosion">
+          <span class="num">01</span>
+        </a>
+        <div class="body">
+          <p class="genre">Arcade shooter</p>
+          <h3>Space Invasion</h3>
+          <p class="desc">Wave after wave of alien ships, and every formation is different. Move, shoot, and try not to get hit.</p>
+          <p class="keys"><span class="k"><kbd>←</kbd><kbd>→</kbd> Move</span><span class="k"><kbd>Space</kbd> Shoot</span><span class="k"><kbd>R</kbd> Restart</span></p>
+          <a class="play" href="games/space-invasion/index.html">Play now <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="card c-fruit" style="--accent:var(--c-fruit)">
+        <a class="media" href="games/fruity-match/index.html" tabindex="-1" aria-hidden="true">
+          <img src="assets/shared/fruity-match-thumb.jpg" width="960" height="640" loading="lazy" alt="Fruity Match board with fruits, ice blocks and special fruits">
+          <span class="num">02</span>
+        </a>
+        <div class="body">
+          <p class="genre">Match-3 puzzle</p>
+          <h3>Fruity Match</h3>
+          <p class="desc">Swap fruits, make matches and hit each level's goal before your moves run out. Ten levels, plus a few special fruits.</p>
+          <p class="keys"><span class="k"><kbd>Mouse</kbd> Click a fruit, then a neighbor</span></p>
+          <a class="play" href="games/fruity-match/index.html">Play now <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="card c-zero" style="--accent:var(--c-zero)">
+        <a class="media" href="games/zeroth-second/index.html" tabindex="-1" aria-hidden="true">
+          <img src="assets/shared/zeroth-second-thumb.jpg" width="960" height="640" loading="lazy" alt="Zeroth Second artwork: the player shooting at three drones in the arena">
+          <span class="num">03</span>
+        </a>
+        <div class="body">
+          <p class="genre">Top-down shooter</p>
+          <h3>Zeroth Second</h3>
+          <p class="desc">Time only moves when you do. Stand still to line up a shot, then move to dodge the drones.</p>
+          <p class="keys"><span class="k"><kbd>WASD</kbd> Move</span><span class="k"><kbd>Mouse</kbd> Aim + click</span><span class="k"><kbd>R</kbd> Reload</span></p>
+          <a class="play" href="games/zeroth-second/index.html">Play now <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="card c-pac" style="--accent:var(--c-pac)">
+        <a class="media" href="games/pac-man/index.html" tabindex="-1" aria-hidden="true">
+          <img src="assets/shared/pac-man-thumb.jpg" width="960" height="640" loading="lazy" alt="Pac-Man in the maze with ghosts nearby">
+          <span class="num">04</span>
+        </a>
+        <div class="body">
+          <p class="genre">Classic maze chase</p>
+          <h3>Pac-Man</h3>
+          <p class="desc">Clear the maze, grab a power pellet and turn the tables on all four ghosts. Just don't let them catch you first.</p>
+          <p class="keys"><span class="k"><kbd>←</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>→</kbd> Move</span><span class="k"><kbd>Space</kbd> Start</span></p>
+          <a class="play" href="games/pac-man/index.html">Play now <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="card c-turbo" style="--accent:var(--c-turbo)">
+        <a class="media" href="games/turbo-rush/index.html" tabindex="-1" aria-hidden="true">
+          <img src="assets/shared/turbo-rush-thumb.jpg" width="960" height="640" loading="lazy" alt="Turbo Rush: a red car on a road with traffic, coins and a shield pickup">
+          <span class="num">05</span>
+        </a>
+        <div class="body">
+          <p class="genre">Endless racer</p>
+          <h3>Turbo Rush</h3>
+          <p class="desc">Weave through traffic, grab coins and power-ups, and hit the nitro. It gets fast, and there's a night mode.</p>
+          <p class="keys"><span class="k"><kbd>←</kbd><kbd>→</kbd> Drive</span><span class="k"><kbd>Space</kbd> Nitro</span><span class="k"><kbd>D</kbd><kbd>N</kbd> Day or night</span></p>
+          <a class="play" href="games/turbo-rush/index.html">Play now <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <h2>About PentaPlay</h2>
+      <p>PentaPlay is a tiny arcade with five games and zero sign-up forms. Blast some aliens, match some fruit, dodge some drones, get chased around a maze by ghosts, and floor it down a road full of questionable drivers.</p>
+      <p>Every game here started life as a Python project, then moved into your browser so you can play without installing a thing. Pick one, play until you lose, then blame the lag.</p>
+    </div>
+    <div class="stack">
+      <h3>House rules</h3>
+      <ul>
+        <li><span class="dot d1"></span><div><b>No downloads, no accounts</b><small>Click play. That's the whole process.</small></div></li>
+        <li><span class="dot d2"></span><div><b>Losing is totally allowed</b><small>Rage-quitting too. The back button is right there.</small></div></li>
+        <li><span class="dot d3"></span><div><b>Sound on is recommended</b><small>Your neighbors' opinions may vary.</small></div></li>
+        <li><span class="dot d4"></span><div><b>"One more round" is a lie</b><small>It's never just one more round.</small></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="logo" href="#home" aria-label="PentaPlay home">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><polygon points="32,6 57,24.2 47.5,53.6 16.5,53.6 7,24.2" fill="#35d4e6"/><polygon points="26,22 26,41 42,31.5" fill="#ffb340"/></svg>
+        <span>Penta<b>Play</b></span>
+      </a>
+      <p class="foot-note">Five browser games, one little arcade. Originally written in Python, now playable in a tab.</p>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="#home">Home</a><a href="#games">Games</a><a href="#about">About</a>
+    </nav>
+  </div>
+  <div class="wrap copy"><span>© 2026 PentaPlay</span></div>
+  <div class="wrap credits">
+    <p>Developed by Team 164</p>
+    <ul><li>Nehal Garg <span>25BCE10492</span></li><li>Megha Guleria <span>25BCE10168</span></li><li>Pratham Srivastava <span>25BCE10064</span></li><li>Ruchir Awasthi <span>25BCE10014</span></li><li>Madhav Soni <span>25BCE11351</span></li></ul>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

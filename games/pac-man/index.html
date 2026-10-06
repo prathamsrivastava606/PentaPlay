@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pac-Man – PentaPlay</title>
+<meta name="description" content="Play Pac-Man in your browser on PentaPlay. Clear the maze and turn the tables on the ghosts with a power pellet.">
+<meta name="theme-color" content="#0e1222">
+<link rel="icon" href="../../assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/game-page.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="gbar"><div class="gwrap gbar-in">
+  <a class="back" href="../../index.html">← Back to PentaPlay</a>
+  <a class="logo" href="../../index.html" aria-label="PentaPlay home"><svg viewBox="0 0 64 64" aria-hidden="true"><polygon points="32,6 57,24.2 47.5,53.6 16.5,53.6 7,24.2" fill="#35d4e6"/><polygon points="26,22 26,41 42,31.5" fill="#ffb340"/></svg><span>Penta<b>Play</b></span></a>
+</div></header>
+<main class="gwrap">
+  <div class="ghead">
+    <div><p class="genre">Classic maze chase</p><h1>Pac-Man</h1></div>
+    <p class="gdesc">Clear the maze and turn the tables on the ghosts with a power pellet.</p>
+  </div>
+  <div class="wrap"><canvas id="game" width="900" height="950"></canvas><p id="loading">Loading…</p></div>
+  <div class="gfoot">
+    <div class="stats"><span>Score <b id="score">0</b></span><span>Lives <b id="lives">3</b></span></div>
+    <div class="gbtns"><button id="restart">Restart</button><button id="fs">Fullscreen (F)</button><a href="../../index.html#games">Back to games</a></div>
+  </div>
+  <p class="controls"><span class="lbl">Controls</span><span class="k"><kbd>←</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>→</kbd> Move</span><span class="k"><kbd>Space</kbd> Start / play again</span><span class="k"><kbd>F</kbd> Fullscreen</span></p>
+  <p class="note">This game is made for a computer with a keyboard.</p>
+</main>
+<script src="board.js"></script><script src="game.js"></script>
+</body>
+</html>
